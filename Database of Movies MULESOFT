@@ -1,0 +1,12 @@
+CREATE DATABASE Movie;
+CREATE TABLE Movies (
+MovieName varchar(255),
+LeadActor varchar(255),
+Actress varchar(255),
+YearOfRelease varchar(255),
+DirectorName varchar(255)
+);
+INSERT INTO Movies(MovieName,LeadActor,Actress,YearOfRelease,DirectorName)
+VALUES('No Time to Die','Daniel Craig','Lea Seydoux','2021','Cary Joji Fuckunaga'),('Casino Royale','Daniel Craig','Eva Green','2006','Martin Campbell'),('Joker','Joaquin Phoenix','Zazie Beetz','2019','Todd Phillips'),('The Shawshank Redemption','Tim Robbins','NA','1994','Frank Darabont'),('Inception','Leonardo Dicaprio','Marion Cotillard','2010','Christopher Nolan')		
+SELECT *FROM Movies;
+SELECT MovieName FROM Movies where LeadActor='Daniel Craig'
